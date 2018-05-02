@@ -18,13 +18,16 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "baseUrl": ".",
+    "rootDirs": [".", "types/generated"],
     "module": "es6",
     "paths": {
       "app-with-generated-types/tests/*": [
-        "tests/*"
+        "tests/*",
+        "types/generated/tests/*"
       ],
       "app-with-generated-types/*": [
-        "app/*"
+        "app/*",
+        "types/generated/app/*"
       ],
       "*": [
         "types/*"
